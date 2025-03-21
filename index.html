@@ -3,52 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Travel Guide</title>
+    <title>Travel Packages | Desi Couple on the Go</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <div class="logo">
-            <h1>AI Travel Guide</h1>
+            <h1>Desi Couple on the Go</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#recommendations">Recommendations</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#packages">Travel Packages</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <section id="hero">
-        <h2>Your Dream Vacation Awaits</h2>
-        <p>Find the best travel destinations personalized just for you!</p>
-        <button id="get-recommendation">Get Recommendations</button>
+        <h2>Explore Our Exclusive Travel Packages</h2>
+        <p>Specially curated for adventurous couples!</p>
     </section>
 
-    <section id="destinations">
-        <h2>Popular Destinations</h2>
-        <div class="destination-list">
-            <div class="destination-card">
+    <section id="packages">
+        <h2>Our Packages</h2>
+        <div class="package-container">
+            <!-- Package 1 -->
+            <div class="package-card">
                 <img src="paris.jpg" alt="Paris">
-                <h3>Paris</h3>
-                <p>The city of lights, romance, and history.</p>
+                <h3>Paris Romance Package</h3>
+                <p>Experience the magic of Paris with your loved one. A romantic 5-day getaway!</p>
+                <p><strong>Price: $2999</strong></p>
+                <button class="book-btn">Book Now</button>
             </div>
-            <div class="destination-card">
-                <img src="nyc.jpg" alt="New York City">
-                <h3>New York City</h3>
-                <p>The city that never sleeps, full of culture and excitement.</p>
+
+            <!-- Package 2 -->
+            <div class="package-card">
+                <img src="bali.jpg" alt="Bali">
+                <h3>Bali Bliss Package</h3>
+                <p>Relax on the beautiful beaches of Bali. A 7-day tropical retreat!</p>
+                <p><strong>Price: $2499</strong></p>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="package-card">
+                <img src="switzerland.jpg" alt="Switzerland">
+                <h3>Switzerland Adventure Package</h3>
+                <p>Explore the Swiss Alps with thrilling outdoor adventures. 6 days of fun!</p>
+                <p><strong>Price: $3599</strong></p>
+                <button class="book-btn">Book Now</button>
             </div>
         </div>
     </section>
 
-    <section id="recommendations">
-        <h2>Personalized Travel Recommendations</h2>
-        <div id="recommendation-output"></div>
-    </section>
-
     <footer>
-        <p>&copy; 2025 AI Travel Guide</p>
+        <p>&copy; 2025 Desi Couple on the Go | All rights reserved</p>
     </footer>
 
     <script src="app.js"></script>

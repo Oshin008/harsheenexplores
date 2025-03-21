@@ -11,67 +11,92 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
 nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    list-style: none;
+    margin-top: 10px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
 #hero {
     background-color: #f4f4f4;
+    padding: 50px;
     text-align: center;
-    padding: 50px 20px;
 }
 
 #hero h2 {
     font-size: 2rem;
 }
 
-button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+#packages {
+    padding: 50px 20px;
+    text-align: center;
 }
 
-button:hover {
-    background-color: #218838;
-}
-
-.destination-list {
+.package-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.destination-card {
-    width: 45%;
+.package-card {
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 20px 0;
 }
 
-.destination-card img {
+.package-card img {
     width: 100%;
-    height: auto;
+    border-radius: 8px;
+}
+
+.package-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.package-card p {
+    margin-top: 10px;
+}
+
+.book-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #218838;
 }
 
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 10px;
+    text-align: center;
+    margin-top: 50px;
 }
