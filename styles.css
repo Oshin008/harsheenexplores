@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,21 +6,28 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
 }
 
+/* Header and Navigation */
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
+header .logo h1 {
+    font-size: 2rem;
+}
+
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    list-style-type: none;
+    margin-top: 15px;
 }
 
 nav ul li {
@@ -30,73 +38,182 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    text-transform: uppercase;
 }
 
-#hero {
-    background-color: #f4f4f4;
-    padding: 50px;
+nav ul li a:hover {
+    color: #28a745;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 0;
     text-align: center;
 }
 
-#hero h2 {
-    font-size: 2rem;
+.hero-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-#packages {
+.hero-section .cta-button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-section .cta-button:hover {
+    background-color: #218838;
+}
+
+/* Travel Packages Section */
+.packages-section {
     padding: 50px 20px;
     text-align: center;
+    background-color: #fff;
+}
+
+.packages-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .package-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .package-card {
     width: 30%;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 15px;
-    padding: 20px;
+    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
 }
 
 .package-card img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
 .package-card h3 {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 1.5rem;
 }
 
 .package-card p {
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
-.book-btn {
+.package-card .book-btn {
     background-color: #28a745;
     color: white;
-    border: none;
     padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.book-btn:hover {
+.package-card .book-btn:hover {
     background-color: #218838;
 }
 
+/* About Section */
+.about-section {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-card span {
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #28a745;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section .cta-button {
+    background-color: #fff;
+    color: #28a745;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-section .cta-button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 10px;
     text-align: center;
-    margin-top: 50px;
+    padding: 10px;
 }
